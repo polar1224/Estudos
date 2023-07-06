@@ -1,0 +1,27 @@
+
+body{
+    background-color: rgb(123, 184, 253);
+    font: 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px; 
+   
+    margin: auto;  /*usamos para centralizar*/
+
+    box-shadow: 5px 5px 10px rgb(0, 0, 0); /*Aqui é para dar um sombreamento na div*/
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

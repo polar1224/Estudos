@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países </title>
+    <link rel="stylesheet" href="design011.css">
+
+</head>
+<body>
+    <h1>Em que país você está nesse exato momento?</h1>
+    
+    <input id="text" type="text" placeholder="Digite um texto...">
+    <button onclick="Verificar()">Criar frase</button>
+    
+    <p id="res"></p>
+
+    <div id="texto"></div>
+
+    <script>
+       
+       function Verificar() {
+
+       	 // Captura o valor do input
+	
+        var text = window.document.getElementById("text").value;
+        
+
+         // Cria a frase
+
+      
+        
+
+
+        if(text == Brasil){
+            var frase = `Você está no ${inputText}`;
+
+            window.document.getElementById("res").innerHTML = frase;
+        }
+
+        else{ document.getElementById('texto').innerHTML = "Você é Estrangeiro";}
+    
+    }
+
+    </script>
+
+
+
+
+</body>
+</html>

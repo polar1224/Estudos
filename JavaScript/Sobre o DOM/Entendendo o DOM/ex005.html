@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+
+    <style>
+        body{
+            background-color:rgb(197, 234, 255);
+            color: rgb(0, 0, 0);
+            font: normal 14pt Arial;
+        
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Iniciando os estudos em DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div> 
+    <div id="msg"> só testando </div>
+
+</body>
+<script>
+
+
+/*Se por a caso você usar class no lugar da id, você terá que fazer pequenas alterações no seu código, que ficaria mais o menos assim:
+
+<body>
+    
+    <div class="msg"> só testando </div>
+
+</body>
+
+No script mudaria apenas o hashtag(#) para um pontinho(.) 
+
+<script>
+
+ var d = window.document.querySelector('div.msg')
+    
+/script>
+
+*/
+
+</script>
+    
+    <br>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] // selecionamos aqui na variável o parágrafo que queremos que apareça, e o [0] significa que selecionamos o primeiro parágrafo. 
+
+        window.document.write('Está escrito assim: '+ p1.innerText) // Aqui é onde inserimos o código para que ele apareça.
+
+        p1.style.color = 'blue' // esse é o código que usamos para quando queremos "pintar" o parágrafo que escolhemos no p1.
+
+        //var corpo = window.document.body
+        //corpo.style.background = 'pink'
+        
+        // caso queiramos mudar a cor do site, também conseguimos com esse código acima
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando....' // podemos observar que aqui eu mudei o texto que estava dentro da id='msg', para 'Estou aguardando....'
+        */
+        
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'black'
+        d.style.background = 'green'
+
+    </script>
+
+</body>
+</html>
